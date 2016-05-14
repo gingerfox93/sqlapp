@@ -1,0 +1,31 @@
+<ion-view view-title="Login" name="login-view">
+
+    <ion-content class="padding">
+
+        <div class="col header text-center login-logo">
+            <img src="./img/database.png" class="logo" />
+        </div>
+        
+        <div class="col text-center">
+            <h3>SQLapp</h3>
+        </div>
+
+        <div class="list list-inset">
+            <label class="item item-input">
+              <span class="input-label">Username</span>
+              <input type="text" ng-model="data.username">
+          </label>
+            <label class="item item-input">
+              <span class="input-label">Password</span>
+              <input type="password" ng-model="data.password">
+          </label>
+
+        </div>
+        <button class="button button-block button-calm" ng-click="login()">Sign In</button>
+        <a href="#/register"><button class="button button-block button-balanced">Create Account</button></a>
+     
+        <div class="col text-center">
+            Forgot your password? <strong><a href = "#">Send reminder</a></strong>
+        </div>
+    </ion-content>
+</ion-view>
