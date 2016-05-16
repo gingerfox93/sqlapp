@@ -18,7 +18,7 @@ angular.module('ionicApp').config(function ($stateProvider, $urlRouterProvider) 
       .state('register', {
         url: '/register',
         templateUrl: 'templates/register.html',
-        //controller: 'LoginCtrl',
+        controller: 'LoginCtrl',
       })
       .state('eventmenu.glossary-item', {
         url: "/glossary/:id",

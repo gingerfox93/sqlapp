@@ -10,5 +10,17 @@ angular.module('ionicApp').controller('LoginCtrl', function($scope, LoginService
                 template: 'Please check your credentials!'
             });
         });
-    }
+    };
+    
+     $scope.register = function() {
+        LoginService.registerUser($scope.data.email, $scope.data.password).success(function(data) {
+            $state.go('login');
+        }).error(function(data) {
+            var alertPopup = $ionicPopup.alert({
+                title: 'Registration failed!',
+                template: 'Please check your details!'
+            });
+        });
+    };
+    
 })
